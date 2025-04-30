@@ -1,0 +1,57 @@
+import React from "react"
+import { Link } from "react-router-dom"
+import "./Sidebar.css"
+import {
+  FaList,
+  FaUserMd,
+  FaCalendarAlt,
+  FaComments,
+  FaTrello,
+  FaSignOutAlt,
+} from "react-icons/fa"
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar d-flex flex-column justify-content-between">
+      <div>
+        <div className="text-center my-4">
+          <img src="src\assets\cesar.png" alt="Logo" className="logo" />
+        </div>
+        <ul className="nav flex-column px-3">
+          <li className="nav-item">
+            <a href="/dashboard" className="nav-link">
+              <FaList className="me-2" /> Inicio
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="/atendimentos" className="nav-link">
+              <FaUserMd className="me-2" /> Atendimentos
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              <FaTrello className="me-2" /> Board Time
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              <FaCalendarAlt className="me-2" /> Calendário
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              <FaComments className="me-2" /> Message
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="px-3 mb-4">
+        <a href="#" className="nav-link logout-link">
+          <FaSignOutAlt className="me-2" /> Logout
+        </a>
+      </div>
+    </div>
+  )
+}
+
+export default Sidebar

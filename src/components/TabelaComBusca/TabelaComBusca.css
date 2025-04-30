@@ -1,0 +1,17 @@
+/* TabelaComBusca.css */
+.search-box {
+  margin-bottom: 20px;
+}
+
+/* .cabecalho-tabela {
+  background-color: #f26522 !important;
+  cursor: pointer;
+} */
+.table-dark {
+  --bs-table-bg: #f26522 !important;
+  --bs-table-border-color: #f26522 !important;
+  border-radius: 16px !important;
+}
+.table {
+  --bs-table-hover-bg: #f264223b !important;
+}
