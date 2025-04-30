@@ -2,7 +2,6 @@ import React from "react"
 import "./PagAtendimentos.css"
 import Sidebar from "../components/SideBar/SideBar"
 import CardPerfil from "../components/card-perfil/cardPerfil"
-import Alert from "../components/Alert/Alert"
 import TabelaComBusca from "../components/TabelaComBusca/TabelaComBusca"
 
 export default function PagAtendimentos() {
@@ -16,9 +15,7 @@ export default function PagAtendimentos() {
           {/* Busca */}
           <div className="row">
             <div className="col-lg-9">
-              <TabelaComBusca
-
-              />
+              <TabelaComBusca/>
             </div>
             <CardPerfil
               name={"Gabriel"}

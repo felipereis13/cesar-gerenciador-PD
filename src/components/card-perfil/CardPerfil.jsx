@@ -24,9 +24,11 @@ export default function CardPerfil(props) {
             </div>
           </div>
           <div className="text-center">
-            <button className="btn btn-edit-profile btn-outline-primary mt-3">
-              Editar Perfil de Usuário
-            </button>
+            <a href="/perfil">
+              <button className="btn btn-edit-profile btn-outline-primary mt-3">
+                Editar Perfil de Usuário
+              </button>
+            </a>
           </div>
         </div>
       </div>

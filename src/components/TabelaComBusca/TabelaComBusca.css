@@ -8,6 +8,7 @@
   cursor: pointer;
 } */
 .table-dark {
+  
   --bs-table-bg: #f26522 !important;
   --bs-table-border-color: #f26522 !important;
   border-radius: 16px !important;

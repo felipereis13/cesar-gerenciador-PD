@@ -17,7 +17,7 @@ const Recuperacao = () => {
         </div>
       </div>
       <div>
-        <h1>
+        <h1 className="h1Recuperacao"> 
           <strong>Redefinir Senha</strong>
         </h1>
 

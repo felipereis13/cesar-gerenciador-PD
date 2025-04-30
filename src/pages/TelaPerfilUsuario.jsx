@@ -27,7 +27,7 @@ export default function TelaPerfilUsuario() {
               src="https://via.placeholder.com/120"
               alt="M"
             />
-            <div>
+            <div className="buttonPerfil">
               <button
                 type="button"
                 className="btn btn-orange btn-sm"
