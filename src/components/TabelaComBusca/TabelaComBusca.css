@@ -1,12 +1,15 @@
-/* TabelaComBusca.css */
+.TabelaComBusca {
+ max-height: 58%;  
+}
 .search-box {
   margin-bottom: 20px;
 }
 
-/* .cabecalho-tabela {
-  background-color: #f26522 !important;
-  cursor: pointer;
-} */
+.tabelaPadrao {
+  max-height: 58%;
+  overflow-y: auto;
+
+}
 .table-dark {
   
   --bs-table-bg: #f26522 !important;

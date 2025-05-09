@@ -152,7 +152,7 @@ export default function TabelaComBusca() {
   )
 
   return (
-    <div className="tabelaPadra">
+    <div className="tabelaPadrao">
       <input
         className="form-control search-box"
         id="searchInput"
