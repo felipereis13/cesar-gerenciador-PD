@@ -6,7 +6,7 @@ import Login from "./components/Login/Login"
 import TelaPerfilUsuario from "./pages/TelaPerfilUsuario"
 import Recuperacao from "./pages/Recuperacao"
 import "./App.css"
-
+//* comentario teste */
 export default function App() {
   return (
     <div>
