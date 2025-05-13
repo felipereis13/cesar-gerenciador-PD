@@ -1,0 +1,17 @@
+/* CadastroPaciente.css */
+
+.formulario {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+  max-width: 900px;
+}
+
+/* Título com fonte maior */
+.titulo-principal {
+  font-size: 2rem;
+  font-weight: bold;
+}
