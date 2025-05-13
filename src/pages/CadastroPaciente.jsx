@@ -29,10 +29,18 @@ function CadastroPaciente() {
 
             <div className="mb-3">
               <label className="form-label fw-bold">
-                Matrícula ou CPF <span className="text-danger">*</span>
+              Matrícula<span className="text-danger">*</span>
               </label>
-              <input type="text" name="matricula_ou_CPF" className="form-control" placeholder="Insira a matrícula ou o CPF" />
+              <input type="text" name="matricula_ou_CPF" className="form-control" placeholder="Insira a matrícula" />
             </div>
+
+              <div className="mb-3">
+              <label className="form-label fw-bold">
+              CPF <span className="text-danger">*</span>
+              </label>
+              <input type="text" name="matricula_ou_CPF" className="form-control" placeholder="Insira o CPF" />
+            </div>
+
 
             <div className="mb-3">
               <label className="form-label fw-bold">
@@ -134,14 +142,6 @@ function CadastroPaciente() {
                   <input className="form-check-input" type="checkbox" name="turno" value="noite" />
                   <label className="form-check-label">Noite</label>
                 </div>
-              </div>
-            </div>
-
-            <div className="mb-3">
-              <label className="form-label fw-bold">Horário de Atendimento</label>
-              <input type="time" name="horario" className="form-control" />
-              <div className="form-text mt-1">
-                (O horário está sujeito a alterações conforme disponibilidade do terapeuta e/ou do paciente)
               </div>
             </div>
 
