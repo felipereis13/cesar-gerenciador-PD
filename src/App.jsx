@@ -1,6 +1,7 @@
 // src/App.jsx
 import { Routes, Route, Link } from "react-router-dom"
 import Dashboard from "./pages/Dashboard"
+import PagHistorico from "./pages/Historico"
 import PagAtendimentos from "./pages/PagAtendimentos"
 import Login from "./components/Login/Login"
 import TelaPerfilUsuario from "./pages/TelaPerfilUsuario"
@@ -15,6 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/paghistorico" element={<PagHistorico />} />
         <Route path="/atendimentos" element={<PagAtendimentos />} />
         <Route path="/perfil" element={<TelaPerfilUsuario />} />
         <Route path="/recuperacao" element={<Recuperacao />} />
