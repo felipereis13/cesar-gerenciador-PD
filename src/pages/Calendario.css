@@ -51,7 +51,8 @@
 }
 
 .day:hover {
-  background-color: #f0f0f0;
+  background-color: #007bff;
+  border-radius: 50%;
 }
 
 .today {
