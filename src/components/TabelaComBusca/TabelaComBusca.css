@@ -44,9 +44,6 @@
 
 }
 
-  width: 300px
-}
-
 .tablescroll {
   overflow-y: auto !important;
   max-height: 44rem !important;
