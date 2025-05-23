@@ -10,6 +10,7 @@ import Calendario from "./pages/Calendario"
 import CadastroPaciente from "./pages/CadastroPaciente"
 import Anexos from "./pages/Anexos"
 import "./App.css"
+import DescricaoAtendimentos from "./pages/DescricaoAtendimentos";
 
 export default function App() {
   return (
@@ -21,9 +22,16 @@ export default function App() {
         <Route path="/historico" element={<PagHistorico />} />
         <Route path="/perfil" element={<TelaPerfilUsuario />} />
         <Route path="/recuperacao" element={<Recuperacao />} />
+
+        <Route path="/descricaoAtendimentos" element={<DescricaoAtendimentos />} />
+
+
         <Route path="/calendario" element={<Calendario />} />
         <Route path="/cadastro" element={<CadastroPaciente />} />
         <Route path="/anexos" element={<Anexos />} />
+
+
+
       </Routes>
     </div>
   )
