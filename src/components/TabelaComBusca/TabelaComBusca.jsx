@@ -33,7 +33,9 @@ export default function TabelaComBusca() {
           value={searchTerm}
           onChange={handleSearch}
         />
-        <button className="btn btn-success btn-sm">Novo Cadastro</button>
+        <a href="/cadastro" className="btn btn-success btn-sm">
+          Novo Cadastro
+        </a>
       </div>
 
       <div className="tablescroll">

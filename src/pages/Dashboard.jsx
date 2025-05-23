@@ -1,7 +1,7 @@
 import React from "react"
 import "./Dashboard.css"
 import Sidebar from "../components/SideBar/SideBar"
-import CardPerfil from "../components/card-perfil/cardPerfil"
+import CardPerfilPsicopedagogo from "../components/card-perfil/CardPerfilPsicopedagogo"
 import CardAtendimentos from "../components/Card-atendimentos/CardAtendimentos"
 import Alert from "../components/Alert/Alert"
 
@@ -25,8 +25,8 @@ export default function Dashboard() {
           </Alert>
           <div className="row">
             {/* Perfil */}
-            <CardPerfil
-              name={"Ana"}
+            <CardPerfilPsicopedagogo
+              name={"Ana Maria da Silva"}
               email={"Ana@cesar.com"}
               profissao={"Psicoterapeuta"}
               formacao={"Psicologia"}
