@@ -169,5 +169,12 @@
         "tarde"
       ]
     }
+  ],
+  "descricaoAtendimentos": [
+    {
+      "id": "4e07",
+      "texto": "asdsadsadsadsa",
+      "data": "2025-05-23T19:22:18.825Z"
+    }
   ]
 }

@@ -22,7 +22,7 @@ export default function App() {
         <Route path="/perfil" element={<TelaPerfilUsuario />} />
         <Route path="/recuperacao" element={<Recuperacao />} />
 
-        <Route path="/DescricaoAtendimentos" element={<DescricaoAtendimentos />} />
+        <Route path="/descricaoAtendimentos" element={<DescricaoAtendimentos />} />
 
 
         <Route path="/calendario" element={<Calendario />} />

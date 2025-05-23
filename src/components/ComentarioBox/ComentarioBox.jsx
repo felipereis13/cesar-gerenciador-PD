@@ -3,13 +3,38 @@ import "./ComentarioBox.css"
 
 export default function ComentarioBox() {
   const [comentario, setComentario] = useState("")
-  const [comentarios, setComentarios] = useState([])
 
-  const handleAddComentario = () => {
+  const handleAddComentario = async () => {
     if (comentario.trim() === "") return
 
-    setComentarios([...comentarios, { texto: comentario, id: Date.now() }])
-    setComentario("")
+    const novoComentario = {
+      texto: comentario,
+      data: new Date().toISOString(),
+    }
+
+    try {
+      const response = await fetch(
+        "http://localhost:3000/descricaoAtendimentos",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(novoComentario),
+        }
+      )
+
+      const dados = await response.json()
+      console.log("RESPOSTA DO SERVIDOR:", dados)
+
+      if (!response.ok) throw new Error("Erro no POST")
+
+      alert("Descrição salva com sucesso!")
+      setComentario("")
+    } catch (error) {
+      console.error("Erro:", error)
+      alert("Falha ao adicionar a descrição.")
+    }
   }
 
   return (
@@ -26,13 +51,6 @@ export default function ComentarioBox() {
       <button className="comentario-button" onClick={handleAddComentario}>
         Adicionar Descrição
       </button>
-      <ul className="comentario-lista">
-        {comentarios.map((item) => (
-          <li key={item.id} className="comentario-item">
-            {item.texto}
-          </li>
-        ))}
-      </ul>
     </div>
   )
 }

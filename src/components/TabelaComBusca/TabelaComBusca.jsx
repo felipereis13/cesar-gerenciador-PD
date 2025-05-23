@@ -61,15 +61,21 @@ export default function TabelaComBusca(props) {
                 <td>{item.cpf}</td>
                 <td>{item.email}</td>
                 <td>
+
+                  <a
+                    href="/descricaoAtendimentos"
+                    className="btn btn-success btn-sm"
+
                   <button
                     className="btn btn-success btn-sm"
                     onClick={(e) => {
                       e.stopPropagation()
 
                     }}
+
                   >
                     Novo Atendimento
-                  </button>
+                  </a>
                 </td>
               </tr>
             ))}

@@ -9,10 +9,8 @@ export default function Dashboard() {
   return (
     <div className="dashboard-wrapper">
       <Sidebar />
-      {/* Conteúdo principal */}
       <div className="main-content">
         <div className="dashboard-container container-fluid min-vh-100 p-4">
-          {/* Alert */}
           <Alert tipo={"warning"}>
             <div>
               <strong>Oi Ana</strong>,{" "}
@@ -24,7 +22,6 @@ export default function Dashboard() {
             </a>
           </Alert>
           <div className="row">
-            {/* Perfil */}
             <CardPerfilPsicopedagogo
               name={"Ana Maria da Silva"}
               email={"Ana@cesar.com"}
@@ -32,7 +29,6 @@ export default function Dashboard() {
               formacao={"Psicologia"}
             />
 
-            {/* Painéis principais */}
             <div className="col-lg-9">
               <div className="row">
                 <CardAtendimentos

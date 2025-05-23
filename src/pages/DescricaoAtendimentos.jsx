@@ -10,7 +10,7 @@ export default function PagAtendimentos() {
       <Sidebar />
       {/* Conteúdo principal */}
         <div className="dashboard-container container-fluid min-vh-100 p-4">
-              <div className="card-lateral d-flex" > 
+              <div className="card-lateral d-flex " > 
             <div className="comentario-area"> <ComentarioBox /> </div>
               <CardPerfil
               name={"Gabriel"}
