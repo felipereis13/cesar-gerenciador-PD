@@ -9,6 +9,7 @@ import Recuperacao from "./pages/Recuperacao"
 import Calendario from "./pages/Calendario"
 import CadastroPaciente from "./pages/CadastroPaciente"
 import "./App.css"
+import DescricaoAtendimentos from "./pages/DescricaoAtendimentos";
 
 export default function App() {
   return (
@@ -20,8 +21,13 @@ export default function App() {
         <Route path="/historico" element={<PagHistorico />} />
         <Route path="/perfil" element={<TelaPerfilUsuario />} />
         <Route path="/recuperacao" element={<Recuperacao />} />
+
+        <Route path="/DescricaoAtendimentos" element={<DescricaoAtendimentos />} />
+
+
         <Route path="/calendario" element={<Calendario />} />
         <Route path="/cadastro" element={<CadastroPaciente />} />
+
       </Routes>
     </div>
   )
