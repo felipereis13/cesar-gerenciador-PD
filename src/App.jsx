@@ -8,6 +8,7 @@ import TelaPerfilUsuario from "./pages/TelaPerfilUsuario"
 import Recuperacao from "./pages/Recuperacao"
 import Calendario from "./pages/Calendario"
 import CadastroPaciente from "./pages/CadastroPaciente"
+import Anexos from "./pages/Anexos"
 import "./App.css"
 import DescricaoAtendimentos from "./pages/DescricaoAtendimentos";
 
@@ -27,6 +28,9 @@ export default function App() {
 
         <Route path="/calendario" element={<Calendario />} />
         <Route path="/cadastro" element={<CadastroPaciente />} />
+        <Route path="/anexos" element={<Anexos />} />
+
+
 
       </Routes>
     </div>
