@@ -64,9 +64,8 @@ export default function TabelaComBusca(props) {
 
                   <a
                     href="/descricaoAtendimentos"
-                    className="btn btn-success btn-sm"
 
-                  <button
+                  
                     className="btn btn-success btn-sm"
                     onClick={(e) => {
                       e.stopPropagation()
