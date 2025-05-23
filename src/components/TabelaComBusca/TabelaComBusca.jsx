@@ -57,9 +57,12 @@ export default function TabelaComBusca() {
                 <td>{item.cpf}</td>
                 <td>{item.email}</td>
                 <td>
-                  <button className="btn btn-success btn-sm">
+                  <a
+                    href="/descricaoAtendimentos"
+                    className="btn btn-success btn-sm"
+                  >
                     Novo Atendimento
-                  </button>
+                  </a>
                 </td>
               </tr>
             ))}
