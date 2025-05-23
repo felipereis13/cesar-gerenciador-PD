@@ -6,6 +6,7 @@ import Login from "./components/Login/Login"
 import TelaPerfilUsuario from "./pages/TelaPerfilUsuario"
 import Recuperacao from "./pages/Recuperacao"
 import "./App.css"
+import DescricaoAtendimentos from "./pages/DescricaoAtendimentos";
 
 export default function App() {
   return (
@@ -16,6 +17,8 @@ export default function App() {
         <Route path="/atendimentos" element={<PagAtendimentos />} />
         <Route path="/perfil" element={<TelaPerfilUsuario />} />
         <Route path="/recuperacao" element={<Recuperacao />} />
+        <Route path="/DescricaoAtendimentos" element={<DescricaoAtendimentos />} />
+
       </Routes>
     </div>
   )
