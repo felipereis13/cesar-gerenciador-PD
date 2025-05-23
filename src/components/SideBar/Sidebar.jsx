@@ -34,7 +34,7 @@ const Sidebar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="/Calendario" className="nav-link">
               <FaCalendarAlt className="me-2" /> Calendário
             </a>
           </li>
