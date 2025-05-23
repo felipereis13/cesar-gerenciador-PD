@@ -12,6 +12,10 @@
   border-radius: 8px;
   transition: background-color 0.3s;
 }
+.sidebar img{
+  
+  width: 180px;
+}
 
 .sidebar .nav-link:hover {
   background-color: white;

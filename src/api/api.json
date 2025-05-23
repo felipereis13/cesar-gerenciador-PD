@@ -168,6 +168,38 @@
       "turno": [
         "tarde"
       ]
+    },
+    {
+      "id": "4e28",
+      "nome": "asd",
+      "matricula": "asd",
+      "cpf": "asd",
+      "data_nascimento": "2025-05-23",
+      "NomeResponsavel": "",
+      "telefone": "",
+      "email": "",
+      "TipoDeVinculo": "Aluno",
+      "mensagem": "",
+      "curso": "",
+      "possui": "Sim",
+      "turno": [
+        "manha"
+      ]
+    },
+    {
+      "id": "f19f",
+      "nome": "asdsadsad",
+      "matricula": "sadsa",
+      "cpf": "",
+      "data_nascimento": "2025-05-23",
+      "NomeResponsavel": "",
+      "telefone": "",
+      "email": "",
+      "TipoDeVinculo": "Aluno",
+      "mensagem": "",
+      "curso": "",
+      "possui": "Sim",
+      "turno": []
     }
   ],
   "descricaoAtendimentos": [
@@ -175,6 +207,16 @@
       "id": "4e07",
       "texto": "asdsadsadsadsa",
       "data": "2025-05-23T19:22:18.825Z"
+    },
+    {
+      "id": "6087",
+      "texto": "asdsa",
+      "data": "2025-05-23T19:59:45.274Z"
+    },
+    {
+      "id": "b035",
+      "texto": "Relato do Paciente:\nPaciente comparece à primeira sessão relatando sintomas de ansiedade, especialmente no período noturno. Refere dificuldades para dormir, pensamentos acelerados, sensação de falta de ar e taquicardia. Informa que os sintomas se intensificaram há aproximadamente 3 meses. Relata também tentativas de distração (assistir séries, sair com amigos), sem melhora significativa.\n\nObservações Clínicas:\nPaciente apresenta-se orientado, com aparência condizente com a idade e vestimenta adequada. Demonstra nervosismo inicial, que vai diminuindo ao longo da sessão. Estabelece vínculo terapêutico de forma satisfatória. Discurso articulado, coerente e linear. Não há sinais evidentes de alteração de pensamento ou percepção.\n\nIntervenções Realizadas:\nFoi acolhida a queixa principal, validando os sintomas e reforçando o espaço terapêutico como seguro e sem julgamentos. Psicoeducação inicial sobre ansiedade. Foi sugerido início de acompanhamento psicoterapêutico para investigação de fatores associados aos sintomas ansiosos e desenvolvimento de estratégias de enfrentamento. Sinalizada, caso necessário, a possibilidade de avaliação psiquiátrica em momento oportuno.\n\nEncaminhamentos:\nNenhum encaminhamento no momento. Acompanhamento psicológico semanal acordado com o paciente.\n\nPlano para Sessões Futuras:\nInvestigar histórico de vida, rotina atual, fatores estressores e possíveis gatilhos. Trabalhar autorregulação emocional e estratégias comportamentais para manejo da ansiedade.",
+      "data": "2025-05-23T20:02:19.963Z"
     }
   ]
 }
