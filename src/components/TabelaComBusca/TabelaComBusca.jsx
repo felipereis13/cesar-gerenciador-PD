@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import "./TabelaComBusca.css"
 
-export default function TabelaComBusca() {
+export default function TabelaComBusca(props) {
   const [data, setData] = useState([])
   const [searchTerm, setSearchTerm] = useState("")
 
@@ -51,15 +51,28 @@ export default function TabelaComBusca() {
           </thead>
           <tbody>
             {filteredData.map((item) => (
-              <tr key={item.id || item.matricula}>
+              <tr
+                key={item.id || item.matricula}
+                onClick={() => props.onLinhaClicada?.(item)}
+                style={{ cursor: "pointer" }}
+              >
                 <td>{item.matricula}</td>
                 <td>{item.nome}</td>
                 <td>{item.cpf}</td>
                 <td>{item.email}</td>
                 <td>
+
                   <a
                     href="/descricaoAtendimentos"
                     className="btn btn-success btn-sm"
+
+                  <button
+                    className="btn btn-success btn-sm"
+                    onClick={(e) => {
+                      e.stopPropagation()
+
+                    }}
+
                   >
                     Novo Atendimento
                   </a>
