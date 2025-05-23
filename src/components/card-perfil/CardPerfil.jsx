@@ -8,6 +8,11 @@ export default function CardPerfil(props) {
   return (
     <div className="col-lg-3 mb-4">
       <div className="profile-card card">
+        <button
+          className="btn-close position-absolute top-0 end-0 m-2"
+          aria-label="Fechar"
+          onClick={props.onFechar}
+        />
         <div className="card-body">
           <div className="profile-avatar">G</div>
           <div className="profile-info-card-container">
@@ -41,8 +46,8 @@ export default function CardPerfil(props) {
             </a>
             <div className="configuracao pt-5">
               <a href="/perfil">
-              <IoSettingsSharp className="configuracao m-1"/>Editar Perfil
-            </a>
+                <IoSettingsSharp className="configuracao m-1" />Editar Perfil
+              </a>
             </div>
 
           </div>
