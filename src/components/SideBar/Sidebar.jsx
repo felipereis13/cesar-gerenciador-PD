@@ -43,11 +43,7 @@ const Sidebar = () => {
               <FaComments className="me-2" /> Message
             </a>
           </li>
-          <li className="nav-item">
-            <a href="/DescricaoAtendimentos" className="nav-link">
-              <FaComments className="me-2" /> Descrição Atendimentos
-            </a>
-          </li>
+          
         </ul>
       </div>
       <div className="px-3 mb-4">
