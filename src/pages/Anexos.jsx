@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Sidebar from "../components/SideBar/SideBar"
-import CardPerfil from "../components/card-perfil/cardPerfil"
+import CardPerfil from "../components/card-perfil/CardPerfil"
 import "./Anexos.css"
 
 export default function Anexos() {
@@ -36,7 +36,7 @@ export default function Anexos() {
   }
 
   return (
-    <div className="dashboard-wrapper">
+    <div className="dashboard-wrapper" id="telaAnexos">
       <Sidebar />
 
       <div className="main-content">

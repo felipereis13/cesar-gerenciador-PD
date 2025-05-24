@@ -1,8 +1,8 @@
 import React from "react"
 import "./CardPerfil.css" // Importação do CSS
-import { CgAttachment } from "react-icons/cg";
-import { FaHistory, FaComments, FaCalendarAlt } from "react-icons/fa";
-import { IoSettingsSharp } from "react-icons/io5";
+import { CgAttachment } from "react-icons/cg"
+import { FaHistory, FaComments, FaCalendarAlt } from "react-icons/fa"
+import { IoSettingsSharp } from "react-icons/io5"
 
 export default function CardPerfil(props) {
   return (
@@ -32,7 +32,7 @@ export default function CardPerfil(props) {
             </div>
           </div>
           <div className="icon text-center p-4">
-            <a href="/arquivo ">
+            <a href="/anexos ">
               <CgAttachment className="#" />
             </a>
             <a href="/historico">
@@ -46,10 +46,10 @@ export default function CardPerfil(props) {
             </a>
             <div className="configuracao pt-5">
               <a href="/perfil">
-                <IoSettingsSharp className="configuracao m-1" />Editar Perfil
+                <IoSettingsSharp className="configuracao m-1" />
+                Editar Perfil
               </a>
             </div>
-
           </div>
         </div>
       </div>

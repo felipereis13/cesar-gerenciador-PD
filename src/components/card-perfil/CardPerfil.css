@@ -38,18 +38,18 @@
   color: #495057;
 }
 
-.icon a{
+.icon a {
   text-decoration: none;
   color: #000000;
   background-color: #f26522;
   border-radius: 50px;
   padding: 10px;
-  margin-left: 20px;
+  margin-left: 2px;
   color: white;
-   transition: all 0.3s ease;
-   border: 2px solid #f26522;
+  transition: all 0.3s ease;
+  border: 2px solid #f26522;
 }
-.icon a:hover{
+.icon a:hover {
   color: #f26522;
   background-color: white;
 }

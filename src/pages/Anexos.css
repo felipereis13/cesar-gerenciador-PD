@@ -1,7 +1,7 @@
 .dashboard-container {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f7f6E2 !important;
+  background-color: #f7f6e2 !important;
   padding: 2rem;
   border-radius: 8px;
   border: none !important;
@@ -12,9 +12,8 @@
   background-color: #fff;
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
-
 
 .titulo-anexos {
   font-size: 2rem;
@@ -83,12 +82,11 @@
   margin-top: 1.5rem;
 }
 
-.dashboard-wrapper > div:last-child {
+#telaAnexos > div:last-child {
   background-color: none !important;
   border-radius: 10px !important;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0) !important;
   padding: 25px !important;
   margin: 1rem !important;
+  margin-top: 0 !important;
 }
- 
-
