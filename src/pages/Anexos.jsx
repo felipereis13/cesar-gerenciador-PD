@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Sidebar from "../components/SideBar/SideBar"
+import SideBar from "../components/SideBar/SideBar"
 import CardPerfil from "../components/card-perfil/CardPerfil"
 import "./Anexos.css"
 
