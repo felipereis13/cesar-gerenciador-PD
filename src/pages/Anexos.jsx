@@ -40,8 +40,8 @@ export default function Anexos() {
   }
 
   return (
-    <div className="dashboard-wrapper">
-      <Sidebar />
+    <div className="dashboard-wrapper" id="telaAnexos">
+      <SideBar />
 
       <div className="main-content">
         <div className="dashboard-container container-fluid min-vh-100 p-4">
