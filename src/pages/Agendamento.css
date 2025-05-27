@@ -1,42 +1,39 @@
-/* 1. Contêiner principal da aplicação */
+
 .app-container {
-  min-height: 100vh; /* Garante que o contêiner ocupe toda a altura da viewport */
-  width: 100vw;      /* Garante que o contêiner ocupe toda a largura da viewport */
-  /* display: flex;  já está no JSX com d-flex do Bootstrap, mas é bom lembrar */
+  min-height: 100vh; 
+  width: 100vw;      
 }
 
-/* 2. Estilos para a Sidebar (se não estiverem definidos no próprio componente Sidebar.css) */
-/* Se a Sidebar já tem um arquivo CSS próprio, ajuste-o lá */
-.sidebar { /* Supondo que seu componente Sidebar renderize uma div com a classe 'sidebar' */
-  width: 250px; /* Largura fixa da sua sidebar. Ajuste conforme necessário. */
-  background: linear-gradient(135deg, #ff6002 0%, #ff8c02 100%); /* Cor de fundo escura, comum para sidebars */
-  color: #F26522 !important; /* Cor do texto */
-  padding: 20px; /* Espaçamento interno */
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
-  /* flex-shrink: 0; */ /* Opcional: Garante que a sidebar não encolha em telas pequenas */
+
+.sidebar { 
+  width: 250px; 
+  background: linear-gradient(135deg, #ff6002 0%, #ff8c02 100%); 
+  color: #F26522 !important; 
+  padding: 20px; 
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* 3. Estilos para o Conteúdo Principal da Página de Agendamento */
+
 .main-content-agendamento {
-  padding: 20px; /* Espaçamento interno para o conteúdo principal */
-  background-color: #f0f2f5; /* Um fundo claro para o conteúdo da página */
-  /* Se o conteúdo for muito longo e você quiser scroll interno apenas nele */
+  padding: 20px; 
+  background-color: #f0f2f5; 
+
   overflow-y: auto; 
 }
 
-/* 4. Estilos para a seção do formulário de agendamento */
+
 .agendamento-form-section {
-  background-color: #ffffff; /* Fundo branco para a caixa do formulário */
+  background-color: #ffffff; 
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* Espaço acima do formulário */
+  margin-top: 20px; 
 }
 
-/* Ajustes para inputs do Bootstrap para melhor visual */
+
 .form-control {
-  max-width: 300px; /* Limita a largura dos inputs para não ficarem muito grandes */
-  margin-bottom: 15px; /* Espaço entre os inputs */
+  max-width: 300px; 
+  margin-bottom: 15px; 
 }
 
 

@@ -1,17 +1,17 @@
 // src/pages/Agendamento.jsx
 import React from 'react';
 import Sidebar from "../components/SideBar/SideBar"
-import './Agendamento.css'; // Importa o CSS específico para esta página
+import './Agendamento.css'; 
 
 const Agendamento = () => {
   return (
-    // Esta div é o contêiner principal de toda a aplicação, usando d-flex para organizar Sidebar e Conteúdo
+    
     <div className="app-container d-flex"> 
       
-      {/* O componente Sidebar será o primeiro item flex e terá largura fixa */}
+      
       <Sidebar /> 
 
-      {/* Este é o contêiner para o conteúdo principal da página de agendamento */}
+      
       <div className="main-content-agendamento flex-grow-1"> 
         <h1>Página de Agendamento</h1>
         <p>Aqui você pode agendar seus atendimentos.</p>
