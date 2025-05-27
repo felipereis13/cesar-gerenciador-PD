@@ -6,6 +6,7 @@ import PagHistorico from "./pages/PagHistorico"
 import Login from "./components/Login/Login"
 import TelaPerfilUsuario from "./pages/TelaPerfilUsuario"
 import Recuperacao from "./pages/Recuperacao"
+import Agendamento from "./pages/Agendamento"
 import Calendario from "./pages/Calendario"
 import CadastroPaciente from "./pages/CadastroPaciente"
 import Anexos from "./pages/Anexos"
@@ -22,16 +23,11 @@ export default function App() {
         <Route path="/historico" element={<PagHistorico />} />
         <Route path="/perfil" element={<TelaPerfilUsuario />} />
         <Route path="/recuperacao" element={<Recuperacao />} />
-
+        <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/descricaoAtendimentos" element={<DescricaoAtendimentos />} />
-
-
         <Route path="/calendario" element={<Calendario />} />
         <Route path="/cadastro" element={<CadastroPaciente />} />
         <Route path="/anexos" element={<Anexos />} />
-
-
-
       </Routes>
     </div>
   )
