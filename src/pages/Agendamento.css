@@ -1,42 +1,32 @@
-
 .app-container {
-  min-height: 100vh; 
-  width: 100vw;      
+  min-height: 100vh;
+  width: 100vw;
 }
 
-
-.sidebar { 
-  width: 250px; 
-  background: linear-gradient(135deg, #ff6002 0%, #ff8c02 100%); 
-  color: #F26522 !important; 
-  padding: 20px; 
+.SideBar {
+  width: 250px;
+  background: linear-gradient(135deg, #ff6002 0%, #ff8c02 100%);
+  color: #f26522 !important;
+  padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
 }
 
-
 .main-content-agendamento {
-  padding: 20px; 
-  background-color: #f0f2f5; 
+  padding: 20px;
+  background-color: #f0f2f5;
 
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
-
 .agendamento-form-section {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; 
+  margin-top: 20px;
 }
-
 
 .form-control {
-  max-width: 300px; 
-  margin-bottom: 15px; 
+  max-width: 300px;
+  margin-bottom: 15px;
 }
-
-
-
-
-

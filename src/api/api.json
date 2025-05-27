@@ -13,9 +13,7 @@
       "mensagem": "",
       "curso": "Análise e Desenvolvimento de Sistemas",
       "possui": "Não",
-      "turno": [
-        "manha"
-      ]
+      "turno": ["manha"]
     },
     {
       "id": "2",
@@ -30,9 +28,7 @@
       "mensagem": "",
       "curso": "",
       "possui": "Sim",
-      "turno": [
-        "tarde"
-      ]
+      "turno": ["tarde"]
     },
     {
       "id": "3",
@@ -47,10 +43,7 @@
       "mensagem": "",
       "curso": "Design Gráfico",
       "possui": "Não",
-      "turno": [
-        "manha",
-        "tarde"
-      ]
+      "turno": ["manha", "tarde"]
     },
     {
       "id": "4",
@@ -65,25 +58,22 @@
       "mensagem": "Voluntária em projeto social",
       "curso": "",
       "possui": "Sim",
-      "turno": [
-        "noite"
-      ]
+      "turno": ["noite"]
     }
-    
   ],
   "descricaoAtendimentos": [
     {
-      "id": 1,
+      "id": "1",
       "texto": "Paciente relatou estresse no trabalho e insônia. Sugerido diário do sono e prática de mindfulness. Retorno em 7 dias.",
       "data": "20/05/2025 15:00"
     },
     {
-      "id": 2,
+      "id": "2",
       "texto": "Discussão sobre conflitos familiares. Técnica de reestruturação cognitiva aplicada. Paciente apresentou melhora leve no humor.",
       "data": "21/05/2025 10:30"
     },
     {
-      "id": 3,
+      "id": "3",
       "texto": "Paciente mencionou recaída em comportamento compulsivo. Trabalhado plano de prevenção de recaídas. Agendada nova sessão para acompanhamento.",
       "data": "22/05/2025 13:45"
     }

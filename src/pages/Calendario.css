@@ -1,6 +1,6 @@
 /* Calendario.css */
 
-/* Container que envolve a Sidebar e o calendário */
+/* Container que envolve a SideBar e o calendário */
 .app-container {
   display: flex;
   min-height: 100vh;
@@ -11,9 +11,9 @@
 .calendar-container {
   flex: 1;
   display: flex;
-  justify-content: center;   /* Centraliza o conteúdo horizontalmente */
-  align-items: center;       /* Centraliza o conteúdo verticalmente */
-  padding: 40px;             /* Ajuste o padding se necessário */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  padding: 40px; /* Ajuste o padding se necessário */
 }
 
 /* Caixa do calendário */
@@ -22,8 +22,8 @@
   border: 1px solid #ddd;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 1200px;  /* Largura fixa para o calendário */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 1200px; /* Largura fixa para o calendário */
 }
 
 /* Cabeçalho do calendário */
@@ -35,11 +35,13 @@
 }
 
 /* Estilo dos dias da semana */
-.weekdays, .week {
+.weekdays,
+.week {
   display: flex;
 }
 
-.weekday, .day {
+.weekday,
+.day {
   width: 14.28%; /* 100% dividido por 7 dias */
   text-align: center;
   padding: 10px 0;

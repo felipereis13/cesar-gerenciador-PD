@@ -1,6 +1,6 @@
 import React from "react"
 import "./Dashboard.css"
-import Sidebar from "../components/SideBar/SideBar"
+import SideBar from "../components/SideBar/SideBar"
 import CardPerfilPsicopedagogo from "../components/card-perfil/CardPerfilPsicopedagogo"
 import CardAtendimentos from "../components/Card-atendimentos/CardAtendimentos"
 import Alert from "../components/Alert/Alert"
@@ -8,7 +8,7 @@ import Alert from "../components/Alert/Alert"
 export default function Dashboard() {
   return (
     <div className="dashboard-wrapper">
-      <Sidebar />
+      <SideBar />
       <div className="main-content">
         <div className="dashboard-container container-fluid min-vh-100 p-4">
           <Alert tipo={"warning"}>

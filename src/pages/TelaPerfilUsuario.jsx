@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Sidebar from "../components/SideBar/SideBar"
+import SideBar from "../components/SideBar/SideBar"
 import "./TelaPerfilUsuario.css"
 
 export default function TelaPerfilUsuario() {
@@ -17,7 +17,7 @@ export default function TelaPerfilUsuario() {
 
   return (
     <div className="body">
-      <Sidebar />
+      <SideBar />
       <div className="content">
         <h1>Perfil do Usuário</h1>
         <div className="profile-box">

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./PagAtendimentos.css"
-import Sidebar from "../components/SideBar/SideBar"
+import SideBar from "../components/SideBar/SideBar"
 import CardPerfil from "../components/card-perfil/CardPerfil"
 import TabelaComBusca from "../components/TabelaComBusca/TabelaComBusca"
 
@@ -17,7 +17,7 @@ export default function PagAtendimentos() {
 
   return (
     <div className="dashboard-wrapper">
-      <Sidebar />
+      <SideBar />
       <div className="main-content">
         <div className="dashboard-container container-fluid min-vh-100 p-4">
           <div className="row">

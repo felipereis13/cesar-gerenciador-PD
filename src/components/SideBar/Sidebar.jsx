@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./Sidebar.css"
+import "./SideBar.css"
 import {
   FaList,
   FaUserMd,
@@ -10,9 +10,9 @@ import {
   FaSignOutAlt,
 } from "react-icons/fa"
 
-const Sidebar = () => {
+const SideBar = () => {
   return (
-    <div className="sidebar d-flex flex-column justify-content-between">
+    <div className="SideBar d-flex flex-column justify-content-between">
       <div>
         <div className="text-center my-4">
           <img src="src\assets\cesar.png" alt="Logo" className="logo" />
@@ -38,8 +38,6 @@ const Sidebar = () => {
               <FaCalendarAlt className="me-2" /> Calendário
             </a>
           </li>
-        
-          
         </ul>
       </div>
       <div className="px-3 mb-4">
@@ -51,4 +49,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default SideBar

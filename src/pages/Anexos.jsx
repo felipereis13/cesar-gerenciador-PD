@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import Sidebar from "../components/SideBar/SideBar"
+import SideBar from "../components/SideBar/SideBar"
 import CardPerfil from "../components/card-perfil/CardPerfil"
 import "./Anexos.css"
 
@@ -12,12 +12,14 @@ export default function Anexos() {
 
     // Validação: verificar se todos os arquivos têm extensões permitidas
     const arquivosValidos = arquivos.filter((arquivo) => {
-      const extensao = arquivo.name.split('.').pop().toLowerCase()
+      const extensao = arquivo.name.split(".").pop().toLowerCase()
       return extensoesPermitidas.includes(extensao)
     })
 
     if (arquivosValidos.length < arquivos.length) {
-      alert("Alguns arquivos foram ignorados por estarem em formatos não permitidos.")
+      alert(
+        "Alguns arquivos foram ignorados por estarem em formatos não permitidos."
+      )
     }
 
     setArquivosSelecionados(arquivosValidos)
@@ -27,7 +29,9 @@ export default function Anexos() {
     e.preventDefault()
 
     if (arquivosSelecionados.length === 0) {
-      alert("Por favor, selecione pelo menos um arquivo válido antes de enviar.")
+      alert(
+        "Por favor, selecione pelo menos um arquivo válido antes de enviar."
+      )
       return
     }
 
@@ -37,13 +41,16 @@ export default function Anexos() {
 
   return (
     <div className="dashboard-wrapper" id="telaAnexos">
-      <Sidebar />
+      <SideBar />
 
       <div className="main-content">
         <div className="dashboard-container container-fluid min-vh-100 p-4">
           <div className="anexos-container">
             <h1 className="titulo-anexos">Enviar Anexos</h1>
-            <p className="texto-anexos">Arraste ou selecione seus laudos abaixo (PDF, DOCX, JPG, JPEG, PNG)</p>
+            <p className="texto-anexos">
+              Arraste ou selecione seus laudos abaixo (PDF, DOCX, JPG, JPEG,
+              PNG)
+            </p>
 
             <form className="upload-form" onSubmit={handleSubmit}>
               <div className="upload-box">
@@ -70,17 +77,19 @@ export default function Anexos() {
                 </div>
               )}
 
-              <button type="submit" className="btn btn-primary mt-4">Enviar</button>
+              <button type="submit" className="btn btn-primary mt-4">
+                Enviar
+              </button>
             </form>
           </div>
         </div>
       </div>
       <CardPerfil
-              name={"Frank"}
-              email={"frank@cesar.com"}
-              profissao={"Estudante"}
-              formacao={"Análise e Desenvolvimento de Sistemas"}
-              />
+        name={"Frank"}
+        email={"frank@cesar.com"}
+        profissao={"Estudante"}
+        formacao={"Análise e Desenvolvimento de Sistemas"}
+      />
     </div>
   )
 }

@@ -1,78 +1,84 @@
-import React, { useState } from "react";
-import "./Calendario.css";
-import Sidebar from "../components/SideBar/SideBar";
+import React, { useState } from "react"
+import "./Calendario.css"
+import SideBar from "../components/SideBar/SideBar"
 
 export default function Calendar() {
-  const today = new Date();
-  const [currentDate, setCurrentDate] = useState(new Date());
-  const [selectedDate, setSelectedDate] = useState(null);
+  const today = new Date()
+  const [currentDate, setCurrentDate] = useState(new Date())
+  const [selectedDate, setSelectedDate] = useState(null)
 
-  const year = currentDate.getFullYear();
-  const month = currentDate.getMonth();
+  const year = currentDate.getFullYear()
+  const month = currentDate.getMonth()
 
-  const firstDay = new Date(year, month, 1);
-  const lastDay = new Date(year, month + 1, 0);
-  const daysInMonth = lastDay.getDate();
-  const startingDay = firstDay.getDay();
+  const firstDay = new Date(year, month, 1)
+  const lastDay = new Date(year, month + 1, 0)
+  const daysInMonth = lastDay.getDate()
+  const startingDay = firstDay.getDay()
 
   const prevMonth = () => {
-    setCurrentDate(new Date(year, month - 1, 1));
-    setSelectedDate(null); // limpa seleção ao trocar mês
-  };
+    setCurrentDate(new Date(year, month - 1, 1))
+    setSelectedDate(null) // limpa seleção ao trocar mês
+  }
 
   const nextMonth = () => {
-    setCurrentDate(new Date(year, month + 1, 1));
-    setSelectedDate(null); // limpa seleção ao trocar mês
-  };
+    setCurrentDate(new Date(year, month + 1, 1))
+    setSelectedDate(null) // limpa seleção ao trocar mês
+  }
 
-  const weeks = [];
-  let day = 1 - startingDay;
+  const weeks = []
+  let day = 1 - startingDay
 
   for (let i = 0; i < 6; i++) {
-    const week = [];
+    const week = []
     for (let j = 0; j < 7; j++) {
       if (day > 0 && day <= daysInMonth) {
-        week.push(day);
+        week.push(day)
       } else {
-        week.push(null);
+        week.push(null)
       }
-      day++;
+      day++
     }
-    weeks.push(week);
+    weeks.push(week)
   }
 
   const isToday = (d) =>
     d === today.getDate() &&
     month === today.getMonth() &&
-    year === today.getFullYear();
+    year === today.getFullYear()
 
   const isSelected = (d) =>
     selectedDate &&
     d === selectedDate.getDate() &&
     month === selectedDate.getMonth() &&
-    year === selectedDate.getFullYear();
+    year === selectedDate.getFullYear()
 
   const handleDayClick = (day) => {
     if (day) {
-      setSelectedDate(new Date(year, month, day));
+      setSelectedDate(new Date(year, month, day))
     }
-  };
+  }
 
   return (
     <div className="app-container">
-      <Sidebar />
+      <SideBar />
       <div className="calendar">
         <div className="calendar-inner"></div>
         <div className="header">
           <button onClick={prevMonth}>◀</button>
-          <h2>{currentDate.toLocaleString('default', { month: 'long' })} {year}</h2>
+          <h2>
+            {currentDate.toLocaleString("default", { month: "long" })} {year}
+          </h2>
           <button onClick={nextMonth}>▶</button>
         </div>
 
         <div className="weekdays">
-          {['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'].map((day, index) => (
-            <div key={index} className="weekday">{day}</div>
-          ))}
+          {["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"].map(
+            (day, index) => (
+              <div key={index} className="weekday">
+                {day}
+              </div>
+            )
+          )}
         </div>
 
         <div className="days">
@@ -82,12 +88,12 @@ export default function Calendar() {
                 <div
                   key={j}
                   className={`day
-                    ${isToday(day) ? 'today' : ''}
-                    ${isSelected(day) ? 'selected' : ''}
+                    ${isToday(day) ? "today" : ""}
+                    ${isSelected(day) ? "selected" : ""}
                   `}
                   onClick={() => handleDayClick(day)}
                 >
-                  {day || ''}
+                  {day || ""}
                 </div>
               ))}
             </div>
@@ -101,5 +107,5 @@ export default function Calendar() {
         )}
       </div>
     </div>
-  );
+  )
 }

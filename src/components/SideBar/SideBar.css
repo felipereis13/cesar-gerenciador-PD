@@ -1,11 +1,11 @@
-.sidebar {
+.SideBar {
   width: 240px;
   background-color: #f26522;
   color: white;
   padding-top: 20px;
 }
 
-.sidebar .nav-link {
+.SideBar .nav-link {
   color: white !important;
   font-weight: 500;
   padding: 10px 15px;
@@ -13,12 +13,12 @@
   transition: background-color 0.3s;
 }
 
-.sidebar .nav-link:hover {
+.SideBar .nav-link:hover {
   background-color: white;
   color: #f26522 !important;
 }
 
-.sidebar .nav-item.active .nav-link {
+.SideBar .nav-item.active .nav-link {
   background-color: white;
   color: #f26522 !important;
 }

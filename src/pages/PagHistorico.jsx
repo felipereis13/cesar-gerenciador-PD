@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import "./PagHistorico.css"
-import Sidebar from "../components/SideBar/SideBar"
+import SideBar from "../components/SideBar/SideBar"
 import CardPerfil from "../components/card-perfil/cardPerfil"
 
 export default function HistoricoAtendimentos() {
@@ -17,7 +17,7 @@ export default function HistoricoAtendimentos() {
 
   return (
     <div className="dashboard-wrapper">
-      <Sidebar />
+      <SideBar />
       <div className="main-content">
         <div className="dashboard-container container-fluid min-vh-100 p-4">
           <div className="row">

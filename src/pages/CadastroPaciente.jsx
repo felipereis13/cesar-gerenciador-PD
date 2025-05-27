@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Sidebar from "../components/SideBar/SideBar"
+import SideBar from "../components/SideBar/SideBar"
 import "./CadastroPaciente.css"
 
 function CadastroPaciente() {
@@ -47,7 +47,7 @@ function CadastroPaciente() {
 
   return (
     <div className="d-flex">
-      <Sidebar />
+      <SideBar />
       <div className="form formulario">
         <form onSubmit={handleSubmit}>
           <fieldset className="border p-4 rounded shadow-sm bg-white">
