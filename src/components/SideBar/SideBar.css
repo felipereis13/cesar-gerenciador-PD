@@ -5,6 +5,10 @@
   padding-top: 20px;
 }
 
+img{
+  width: 180px !important;
+}
+
 .SideBar .nav-link {
   color: white !important;
   font-weight: 500;
