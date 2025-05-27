@@ -1,7 +1,7 @@
 import React from "react"
 import "./CardPerfilPsicopedagogo.css" // Importação do CSS
 
-export default function CardPerfil(props) {
+export default function CardPerfilPsicopedagogo(props) {
   return (
     <div className="col-lg-3 mb-4">
       <div className="profile-card card">
