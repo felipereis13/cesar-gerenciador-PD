@@ -1,7 +1,7 @@
 import React from "react"
 import "./PagAtendimentos.css"
 import Sidebar from "../components/SideBar/SideBar"
-import CardPerfil from "../components/card-perfil/cardPerfil"
+import CardPerfil from "../components/card-perfil/CardPerfil"
 import ComentarioBox from "../components/ComentarioBox/ComentarioBox";
 
 export default function PagAtendimentos() {
