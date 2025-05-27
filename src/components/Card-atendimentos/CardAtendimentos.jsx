@@ -8,7 +8,7 @@ export default function CardAtendimentos(props) {
         <div className="card-body text-center">
           <h5 className="card-title">{props.cardAtendimentoNome}</h5>
           <h2 className={`${props.cssValorPersonalizado}`}>{props.cardAtendimentoValor || "0"}</h2>
-          <button className="btn btn-link ">{props.CardAtendimentosLink || "Ver mais"}</button>
+          <button className="btn btn-link ">{props.CardAtendimentosLink || ""}</button>
         </div>
       </div>
     </div>

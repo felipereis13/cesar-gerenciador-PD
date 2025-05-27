@@ -38,18 +38,14 @@
   color: #495057;
 }
 
-.icon a {
-  text-decoration: none;
-  color: #000000;
-  background-color: #f26522;
-  border-radius: 50px;
-  padding: 10px;
-  margin-left: 2px;
-  color: white;
+.btn-edit-profile {
+  border: 1px solid #f26522 !important;
+  color: white !important;
   transition: all 0.3s ease;
-  border: 2px solid #f26522;
+  background-color: #f26522 !important;
 }
-.icon a:hover {
-  color: #f26522;
-  background-color: white;
+
+.btn-edit-profile:hover {
+  background-color: White !important;
+  color: #f26522 !important;
 }

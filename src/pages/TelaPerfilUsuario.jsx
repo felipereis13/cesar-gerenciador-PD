@@ -23,9 +23,9 @@ export default function TelaPerfilUsuario() {
         <div className="profile-box">
           <div className="d-flex align-center justify-content-center mb-3">
             <img
-              className="profile-avatar"
-              src="https://via.placeholder.com/120"
-              alt="M"
+              className="profile-avatar ali"
+              src="src\assets\dD1haXNfaHlicmlk (1).webp"
+              alt=""
             />
             <div className="buttonPerfil">
               <button
@@ -47,7 +47,7 @@ export default function TelaPerfilUsuario() {
                 type="text"
                 className="form-control"
                 id="nome"
-                defaultValue="Maria da Silva"
+                defaultValue="Ana Maria da Silva"
                 disabled={!editando}
               />
             </div>
@@ -59,7 +59,7 @@ export default function TelaPerfilUsuario() {
                 type="email"
                 className="form-control"
                 id="email"
-                defaultValue="maria.silva@email.com"
+                defaultValue="Ana@cesar.com"
                 disabled={!editando}
               />
             </div>

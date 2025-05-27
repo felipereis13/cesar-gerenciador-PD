@@ -34,19 +34,16 @@ const Sidebar = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="/Calendario" className="nav-link">
               <FaCalendarAlt className="me-2" /> Calendário
             </a>
           </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              <FaComments className="me-2" /> Message
-            </a>
-          </li>
+        
+          
         </ul>
       </div>
       <div className="px-3 mb-4">
-        <a href="#" className="nav-link logout-link">
+        <a href="/" className="nav-link logout-link">
           <FaSignOutAlt className="me-2" /> Logout
         </a>
       </div>
