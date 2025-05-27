@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./PagHistorico.css"
 import SideBar from "../components/SideBar/SideBar"
-import CardPerfil from "../components/card-perfil/cardPerfil"
+import CardPerfil from "../components/card-perfil/CardPerfil"
 
 export default function HistoricoAtendimentos() {
   const [descricoes, setDescricoes] = useState([])
