@@ -1,11 +1,11 @@
 .SideBar {
   width: 240px;
-  background-color: #f26522;
+  background-color: #e67b10 !important;
   color: white;
   padding-top: 20px;
 }
 
-img{
+img {
   width: 180px !important;
 }
 
@@ -19,12 +19,12 @@ img{
 
 .SideBar .nav-link:hover {
   background-color: white;
-  color: #f26522 !important;
+  color: #e67b10 !important;
 }
 
 .SideBar .nav-item.active .nav-link {
   background-color: white;
-  color: #f26522 !important;
+  color: #e67b10 !important;
 }
 
 .logo {
