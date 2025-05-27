@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import SideBar from "../components/SideBar/SideBar"
-import CardPerfil from "../components/card-perfil/CardPerfil"
+import CardPerfil from "../components/Card-Perfil/CardPerfil"
 import "./Anexos.css"
 
 export default function Anexos() {

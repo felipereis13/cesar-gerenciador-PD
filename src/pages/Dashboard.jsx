@@ -1,7 +1,7 @@
 import React from "react"
 import "./Dashboard.css"
 import SideBar from "../components/SideBar/SideBar"
-import CardPerfilPsicopedagogo from "../components/card-perfil/CardPerfilPsicopedagogo"
+import CardPerfilPsicopedagogo from "../components/Card-Perfil/CardPerfilPsicopedagogo"
 import CardAtendimentos from "../components/Card-atendimentos/CardAtendimentos"
 import Alert from "../components/Alert/Alert"
 

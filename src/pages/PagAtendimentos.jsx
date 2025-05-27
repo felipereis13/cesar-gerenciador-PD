@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./PagAtendimentos.css"
 import SideBar from "../components/SideBar/SideBar"
-import CardPerfil from "../components/card-perfil/CardPerfil"
+import CardPerfil from "../components/Card-Perfil/CardPerfil"
 import TabelaComBusca from "../components/TabelaComBusca/TabelaComBusca"
 
 export default function PagAtendimentos() {
