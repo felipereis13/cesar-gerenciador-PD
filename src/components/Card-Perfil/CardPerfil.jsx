@@ -15,7 +15,11 @@ export default function CardPerfil(props) {
         />
         <div className="card-body">
           <div className="profile-avatar">
-            <img src="src/assets/alunoPerfilAluno.png" alt="" id="imgAvatar" />
+            <img
+              src="/Img-Card-Perfil/alunoPerfilAluno.png"
+              alt=""
+              id="imgAvatar"
+            />
           </div>
           <div className="profile-info-card-container">
             <div className="profile-info-card">
