@@ -14,7 +14,9 @@ export default function CardPerfil(props) {
           onClick={props.onFechar}
         />
         <div className="card-body">
-          <div className="profile-avatar">G</div>
+          <div className="profile-avatar">
+            <img src="src/assets/alunoPerfilAluno.png" alt="" id="imgAvatar" />
+          </div>
           <div className="profile-info-card-container">
             <div className="profile-info-card">
               <p>

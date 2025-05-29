@@ -20,7 +20,7 @@ const Login = () => {
   return (
     <div className="container">
       <div className="Logo">
-        <img src="src\assets\Logo\cesar.svg" alt="C.E.S.A.R" />
+        <img src="./src/assets/Logo/cesar.svg" alt="C.E.S.A.R" />
       </div>
       <form onSubmit={handleSubmit}>
         <div className="input-barra">

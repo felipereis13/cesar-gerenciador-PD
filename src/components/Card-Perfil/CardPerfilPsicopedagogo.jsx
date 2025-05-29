@@ -6,7 +6,11 @@ export default function CardPerfilPsicopedagogo(props) {
     <div className="col-lg-3 mb-4">
       <div className="profile-card card">
         <div className="card-body">
-          <div className="profile-avatar">A</div>
+          <div className="profile-avatar">
+            
+            <img src="src/assets/dD1haXNfaHlicmlk (1).webp" alt=""
+            id="imgAvatar" />
+          </div>
           <div className="profile-info-card-container">
             <div className="profile-info-card">
               <p>

@@ -23,8 +23,9 @@ export default function TelaPerfilUsuario() {
         <div className="profile-box">
           <div className="d-flex align-center justify-content-center mb-3">
             <img
-              className="profile-avatar ali"
-              src="src\assets\dD1haXNfaHlicmlk (1).webp"
+              className="profile-avatar"
+              id="imgAvatar"
+              src="src/assets/dD1haXNfaHlicmlk (1).webp"
               alt=""
             />
             <div className="buttonPerfil">

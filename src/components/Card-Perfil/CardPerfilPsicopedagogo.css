@@ -29,6 +29,7 @@
 }
 .profile-info-card {
   width: 80%;
+  margin-left: 2rem;
 }
 .profile-info p {
   margin-bottom: 0.75rem;
