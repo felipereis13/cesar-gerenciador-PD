@@ -68,24 +68,8 @@
       "turno": [
         "noite"
       ]
-    },
-    {
-      "id": "a5b8",
-      "nome": "Felipe Reis",
-      "matricula": "0009090",
-      "cpf": "99999999999",
-      "data_nascimento": "1995-12-13",
-      "NomeResponsavel": "Teresa Helena",
-      "telefone": "81999999999",
-      "email": "Ana@cesar.com",
-      "TipoDeVinculo": "Aluno",
-      "mensagem": "",
-      "possui": "Sim",
-      "turno": [
-        "manha"
-      ],
-      "curso": "Análise e Desenvolvimento de Sistemas"
     }
+    
   ],
   "descricaoAtendimentos": [
     {

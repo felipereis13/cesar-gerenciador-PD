@@ -6,15 +6,19 @@ import CardPerfil from "../components/Card-Perfil/CardPerfil"
 export default function HistoricoAtendimentos() {
   const [descricoes, setDescricoes] = useState([])
 
+  const API_BASE =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://cesar-gerenciador-pd.onrender.com"
+
   useEffect(() => {
-    fetch("http://localhost:3000/descricaoAtendimentos")
+    fetch(`${API_BASE}/descricaoAtendimentos`)
       .then((res) => res.json())
       .then((data) => {
-        setDescricoes(data.reverse()) // mostra os mais recentes primeiro
+        setDescricoes(data.reverse())
       })
       .catch((err) => console.error("Erro ao carregar descrições:", err))
   }, [])
-
   return (
     <div className="dashboard-wrapper">
       <SideBar />
