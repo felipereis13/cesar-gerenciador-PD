@@ -11,6 +11,11 @@ function CadastroPaciente() {
     setMostrarCurso(false)
   }
 
+  const API_BASE =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://cesar-gerenciador-pd.onrender.com"
+
   const handleSubmit = (e) => {
     e.preventDefault()
 
@@ -18,13 +23,11 @@ function CadastroPaciente() {
     const data = Object.fromEntries(formData.entries())
 
     data.turno = formData.getAll("turno")
-
     data.curso = cursoSelecionado
-
     data.matricula = formData.get("matricula")
     data.cpf = formData.get("cpf")
 
-    fetch("http://localhost:3000/usuarios", {
+    fetch(`${API_BASE}/usuarios`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

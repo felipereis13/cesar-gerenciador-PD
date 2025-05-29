@@ -4,6 +4,11 @@ import "./ComentarioBox.css"
 export default function ComentarioBox() {
   const [comentario, setComentario] = useState("")
 
+  const API_BASE =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://cesar-gerenciador-pd.onrender.com"
+
   const handleAddComentario = async () => {
     if (comentario.trim() === "") return
 
@@ -13,19 +18,13 @@ export default function ComentarioBox() {
     }
 
     try {
-      const response = await fetch(
-        "http://localhost:3000/descricaoAtendimentos",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(novoComentario),
-        }
-      )
-
-      const dados = await response.json()
-      console.log("RESPOSTA DO SERVIDOR:", dados)
+      const response = await fetch(`${API_BASE}/descricaoAtendimentos`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(novoComentario),
+      })
 
       if (!response.ok) throw new Error("Erro no POST")
 
