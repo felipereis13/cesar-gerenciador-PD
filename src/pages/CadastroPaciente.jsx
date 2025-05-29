@@ -13,7 +13,7 @@ function CadastroPaciente() {
 
   const API_BASE =
     process.env.NODE_ENV === "development"
-      ? "http://localhost:3001"
+      ? "http://localhost:3000"
       : "https://cesar-gerenciador-pd.onrender.com"
 
   const handleSubmit = (e) => {
