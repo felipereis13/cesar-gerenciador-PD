@@ -25,7 +25,7 @@ export default function TelaPerfilUsuario() {
             <img
               className="profile-avatar"
               id="imgAvatar"
-              src="src/assets/dD1haXNfaHlicmlk (1).webp"
+              src="/Img-Card-Perfil/PsicopedagogoPerfil.webp"
               alt=""
             />
             <div className="buttonPerfil">
