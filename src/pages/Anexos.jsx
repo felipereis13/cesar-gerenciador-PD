@@ -70,7 +70,7 @@ export default function Anexos() {
                 </div>
               )}
 
-              <button type="submit" className="btn btn-primary mt-4">Enviar</button>
+              <button type="submit" className="botao-enviar mt-4">Enviar</button>
             </form>
           </div>
         </div>
