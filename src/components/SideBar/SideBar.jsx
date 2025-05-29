@@ -15,7 +15,7 @@ const SideBar = () => {
     <div className="SideBar d-flex flex-column justify-content-between">
       <div>
         <div className="text-center my-4">
-          <img src="cesar.svg" alt="Logo" className="logo" />
+          <img src="/cesar.svg" alt="Logo" className="logo" />
         </div>
         <ul className="nav flex-column px-3">
           <li className="nav-item">
