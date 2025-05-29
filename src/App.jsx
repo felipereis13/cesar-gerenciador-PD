@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/descricaoAtendimentos" element={<DescricaoAtendimentos />} />
         <Route path="/calendario" element={<Calendario />} />
         <Route path="/cadastro" element={<CadastroPaciente />} />
-        <Route path="/anexos" element={<Anexos />} />
+        <Route path="/anexos" element={<Anexos/>} />
       </Routes>
     </div>
   )
