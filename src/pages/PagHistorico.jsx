@@ -8,17 +8,46 @@ export default function HistoricoAtendimentos() {
 
   const API_BASE =
     process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
+      ? "json-server --watch src/api/api.json --port 3000"
       : "https://cesar-gerenciador-pd.onrender.com"
 
-  useEffect(() => {
+  const carregarDescricoes = () => {
     fetch(`https://cesar-gerenciador-pd.onrender.com/descricaoAtendimentos`)
       .then((res) => res.json())
-      .then((data) => {
-        setDescricoes(data.reverse())
-      })
+      .then((data) => setDescricoes(data.reverse()))
       .catch((err) => console.error("Erro ao carregar descrições:", err))
+  }
+
+  useEffect(() => {
+    carregarDescricoes()
   }, [])
+
+  const deletarDescricao = async (id) => {
+    const confirm = window.confirm(
+      "Tem certeza que deseja apagar essa descrição?"
+    )
+    if (!confirm) return
+
+    try {
+      const res = await fetch(
+        `https://cesar-gerenciador-pd.onrender.com/descricaoAtendimentos/${id}`,
+        {
+          method: "DELETE",
+        }
+      )
+
+      if (res.ok) {
+        alert("Descrição apagada com sucesso!")
+        carregarDescricoes()
+      } else {
+        alert("Erro ao apagar.")
+      }
+    } catch (error) {
+      console.error("Erro ao apagar descrição:", error)
+      alert("Erro na conexão.")
+    }
+  }
+
   return (
     <div className="dashboard-wrapper">
       <SideBar />
@@ -32,9 +61,8 @@ export default function HistoricoAtendimentos() {
                 </div>
 
                 <div className="timeline">
-                  {/* Renderizando dados do JSON Server */}
-                  {descricoes.map((item, index) => (
-                    <div key={index} className="timeline-item atendimento">
+                  {descricoes.map((item) => (
+                    <div key={item.id} className="timeline-item atendimento">
                       <div className="timeline-header">
                         <h3>Atendimento Registrado</h3>
                         <div className="timeline-meta">
@@ -48,8 +76,11 @@ export default function HistoricoAtendimentos() {
                       </div>
                       <div className="timeline-content">
                         <p>{item.texto}</p>
-                        <button className="btn btn-outline-secondary btn-sm mt-2">
-                          Ver detalhes
+                        <button
+                          className="btn btn-outline-danger btn-sm mt-2"
+                          onClick={() => deletarDescricao(item.id)}
+                        >
+                          Apagar
                         </button>
                       </div>
                     </div>
