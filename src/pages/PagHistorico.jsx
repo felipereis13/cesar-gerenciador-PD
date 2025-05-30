@@ -12,7 +12,7 @@ export default function HistoricoAtendimentos() {
       : "https://cesar-gerenciador-pd.onrender.com"
 
   useEffect(() => {
-    fetch(`${API_BASE}/descricaoAtendimentos`)
+    fetch(`https://cesar-gerenciador-pd.onrender.com/descricaoAtendimentos`)
       .then((res) => res.json())
       .then((data) => {
         setDescricoes(data.reverse())

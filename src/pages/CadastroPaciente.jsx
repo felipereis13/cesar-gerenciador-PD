@@ -27,7 +27,7 @@ function CadastroPaciente() {
     data.matricula = formData.get("matricula")
     data.cpf = formData.get("cpf")
 
-    fetch(`${API_BASE}/usuarios`, {
+    fetch(`https://cesar-gerenciador-pd.onrender.com/usuarios`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
