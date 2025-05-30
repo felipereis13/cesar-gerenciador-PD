@@ -18,13 +18,16 @@ export default function ComentarioBox() {
     }
 
     try {
-      const response = await fetch(`${API_BASE}/descricaoAtendimentos`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(novoComentario),
-      })
+      const response = await fetch(
+        `https://cesar-gerenciador-pd.onrender.com/descricaoAtendimentos`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(novoComentario),
+        }
+      )
 
       if (!response.ok) throw new Error("Erro no POST")
 
