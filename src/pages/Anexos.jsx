@@ -6,11 +6,9 @@ import "./Anexos.css"
 export default function Anexos() {
   const [arquivosSelecionados, setArquivosSelecionados] = useState([])
   const extensoesPermitidas = ["pdf", "docx", "jpg", "jpeg", "png"]
-
   function handleFileChange(e) {
     const arquivos = Array.from(e.target.files)
 
-    // Validação: verificar se todos os arquivos têm extensões permitidas
     const arquivosValidos = arquivos.filter((arquivo) => {
       const extensao = arquivo.name.split(".").pop().toLowerCase()
       return extensoesPermitidas.includes(extensao)
@@ -24,7 +22,6 @@ export default function Anexos() {
 
     setArquivosSelecionados(arquivosValidos)
   }
-
   function handleSubmit(e) {
     e.preventDefault()
 
@@ -65,7 +62,6 @@ export default function Anexos() {
                   Escolher Arquivos
                 </label>
               </div>
-
               {arquivosSelecionados.length > 0 && (
                 <div className="mt-3">
                   <p>Arquivos válidos selecionados:</p>
@@ -77,7 +73,7 @@ export default function Anexos() {
                 </div>
               )}
 
-              <button type="submit" className="btn btn-primary mt-4">
+              <button type="submit" className="botao-enviar mt-4">
                 Enviar
               </button>
             </form>
@@ -89,6 +85,7 @@ export default function Anexos() {
         email={"frank@cesar.com"}
         profissao={"Estudante"}
         formacao={"Análise e Desenvolvimento de Sistemas"}
+        id="cardPerfilAnexos"
       />
     </div>
   )
