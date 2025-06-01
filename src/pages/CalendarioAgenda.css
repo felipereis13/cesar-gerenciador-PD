@@ -5,11 +5,11 @@
 }
 
 .calendario{
-    height: 80vh;
+    height: 90vh;
     width: 60%;
     overflow: auto;
     margin: 20px;
-
+    margin-left: 50px;
 }
 .toolbar{
     height: 100vh;
@@ -17,6 +17,7 @@
     min-width: 300px;
     color: #ffffff;
     background-color: #ffffff;
+    margin-top: 15px;
 
 }
 /*HEADER MOD*/
