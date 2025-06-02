@@ -7,9 +7,10 @@ import Login from "./components/Login/Login"
 import TelaPerfilUsuario from "./pages/TelaPerfilUsuario"
 import Recuperacao from "./pages/Recuperacao"
 import Agendamento from "./pages/Agendamento"
-import Calendario from "./pages/Calendario"
+// import Calendario from "./pages/Calendario"
 import CadastroPaciente from "./pages/CadastroPaciente"
 import Anexos from "./pages/Anexos"
+import CalendarioAgenda from "./pages/CalendarioAgenda"
 import "./App.css"
 import DescricaoAtendimentos from "./pages/DescricaoAtendimentos";
 
@@ -25,9 +26,10 @@ export default function App() {
         <Route path="/recuperacao" element={<Recuperacao />} />
         <Route path="/agendamento" element={<Agendamento />} />
         <Route path="/descricaoAtendimentos" element={<DescricaoAtendimentos />} />
-        <Route path="/calendario" element={<Calendario />} />
+        {/* <Route path="/calendario" element={<Calendario />} /> */}
         <Route path="/cadastro" element={<CadastroPaciente />} />
         <Route path="/anexos" element={<Anexos />} />
+        <Route path="/CalendarioAgenda" element={<CalendarioAgenda />} />
       </Routes>
     </div>
   )
