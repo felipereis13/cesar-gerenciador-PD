@@ -47,7 +47,7 @@ export default function CardPerfil(props) {
             <a href="/DescricaoAtendimentos">
               <FaComments className="#" />
             </a>
-            <a href="/agendamento">
+            <a href="/CalendarioAgenda">
               <FaCalendarAlt className="#" />
             </a>
             <div className="configuracao pt-5">

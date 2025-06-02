@@ -28,11 +28,7 @@ const SideBar = () => {
               <FaUserMd className="me-2" /> Atendimentos
             </a>
           </li>
-          <li className="nav-item">
-            <a href="#" className="nav-link">
-              <FaTrello className="me-2" /> Board Time
-            </a>
-          </li>
+         
           <li className="nav-item">
             <a href="/CalendarioAgenda" className="nav-link">
               <FaCalendarAlt className="me-2" /> Calendário
