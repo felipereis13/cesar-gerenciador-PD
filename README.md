@@ -1,5 +1,9 @@
 # Sistema de Gerenciamento de Atendimentos - CESAR
 
+O atendimento psicopedagógico exige não apenas conhecimento técnico e sensibilidade no trato com o paciente, mas também organização, acompanhamento sistemático e registro cuidadoso das informações. Pensando nisso, este sistema foi idealizado para apoiar psicopedagogos na gestão dos seus atendimentos, proporcionando uma ferramenta intuitiva, acessível e eficiente.
+
+A aplicação visa digitalizar e centralizar rotinas essenciais do trabalho clínico, como o cadastro de pacientes, agendamento de sessões, organização de tarefas e o armazenamento de documentos. Dessa forma, contribui para melhorar a qualidade do atendimento, otimizar o tempo dos profissionais e garantir maior segurança no controle das informações.
+
 Este projeto consiste em uma aplicação web desenvolvida para auxiliar psicopedagogos da empresa CESAR no gerenciamento de atendimentos realizados com seus pacientes.
 
 A aplicação foi construída utilizando as tecnologias HTML, CSS, React e Bootstrap. Para simulação de um backend, foi utilizado o JSON Server.
