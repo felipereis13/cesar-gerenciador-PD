@@ -68,8 +68,25 @@
       "turno": [
         "noite"
       ]
+    },
+    {
+      "id": "ac35",
+      "nome": "dsfsdafsda",
+      "matricula": "12165351465",
+      "cpf": "10810453897",
+      "data_nascimento": "2025-06-24",
+      "NomeResponsavel": "Andre Silva",
+      "telefone": "81998242649",
+      "email": "felipe.pires@gmail.com",
+      "TipoDeVinculo": "Outros",
+      "mensagem": "",
+      "possui": "Sim",
+      "turno": [
+        "noite"
+      ],
+      "curso": "Análise e Desenvolvimento de Sistemas"
     }
-    
+   
   ],
   "descricaoAtendimentos": [
     {
