@@ -26,6 +26,7 @@ function CadastroPaciente() {
     data.curso = cursoSelecionado
     data.matricula = formData.get("matricula")
     data.cpf = formData.get("cpf")
+    console.log(data)
 
     fetch(`https://cesar-gerenciador-pd.onrender.com/usuarios`, {
       method: "POST",
