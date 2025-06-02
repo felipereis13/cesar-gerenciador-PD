@@ -5,13 +5,8 @@ export default function TabelaComBusca(props) {
   const [data, setData] = useState([])
   const [searchTerm, setSearchTerm] = useState("")
 
-  const API_BASE =
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : "https://cesar-gerenciador-pd.onrender.com"
-
   useEffect(() => {
-    fetch(`https://cesar-gerenciador-pd.onrender.com/usuarios`)
+    fetch("http://localhost:3000/usuarios")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error("Erro ao buscar dados:", error))
@@ -47,7 +42,7 @@ export default function TabelaComBusca(props) {
         <table className="table table-hover">
           <thead className="table-dark">
             <tr>
-              <th>Matrícula</th>
+              <th>Matricula</th>
               <th>Nome</th>
               <th>CPF</th>
               <th>Email</th>
