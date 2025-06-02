@@ -48,10 +48,10 @@ function Adicionar({onAdicionar}){
 
     return(
         <div className="adicionar p-3 rounded border border-white" style={{backgroundColor: '#e9ecef', color:'#212529'}}>
-            <h3>Adicionar Evento</h3>
+            <h3>Agendar Atendimento:</h3>
             <Form onSubmit={handleSubmit}>
                 <Form.Group controlId='formBasicTitle'>
-                    <Form.Label>Título do Evento</Form.Label>
+                    <Form.Label>Título do Agendamento:</Form.Label>
                     <Form.Control type="text" placeholder="Digite o Título" name="title" value={novoEvento.title} onChange={handleChange}/>
                 </Form.Group>
                 <Row>
