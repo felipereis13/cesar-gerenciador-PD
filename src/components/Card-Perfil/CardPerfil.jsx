@@ -1,7 +1,12 @@
 import React from "react"
 import "./CardPerfil.css" // Importação do CSS
 import { CgAttachment } from "react-icons/cg"
-import { FaHistory, FaComments, FaCalendarAlt } from "react-icons/fa"
+import {
+  FaHistory,
+  FaComments,
+  FaCalendarAlt,
+  FaAddressCard,
+} from "react-icons/fa"
 import { IoSettingsSharp } from "react-icons/io5"
 
 export default function CardPerfil(props) {
@@ -30,10 +35,10 @@ export default function CardPerfil(props) {
                 <strong>Email:</strong> {props.email}
               </p>
               <p className="">
-                <strong>Profissão:</strong> {props.profissao || "Não informado"}
+                <strong>Curso:</strong> {props.curso || "Não informado"}
               </p>
               <p className="">
-                <strong>Formação:</strong> {props.formacao || "Não informado"}
+                <strong>Turno:</strong> {props.turno || "Não informado"}
               </p>
             </div>
           </div>
@@ -49,6 +54,9 @@ export default function CardPerfil(props) {
             </a>
             <a href="/CalendarioAgenda">
               <FaCalendarAlt className="#" />
+            </a>
+            <a href={`/paciente/${props.id}`}>
+              <FaAddressCard className="#" />
             </a>
             <div className="configuracao pt-5">
               <a href="/perfil">

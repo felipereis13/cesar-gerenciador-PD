@@ -29,9 +29,10 @@ export default function PagAtendimentos() {
               <CardPerfil
                 name={usuarioSelecionado.nome}
                 email={usuarioSelecionado.email}
-                profissao={usuarioSelecionado.profissao}
-                formacao={usuarioSelecionado.formacao}
+                curso={usuarioSelecionado.curso}
+                turno={usuarioSelecionado.turno}
                 onFechar={fecharPerfil}
+                id={usuarioSelecionado.id}
               />
             )}
           </div>

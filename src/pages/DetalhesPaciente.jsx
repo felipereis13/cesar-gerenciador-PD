@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import SideBar from "../components/SideBar/SideBar"
-import "./CadastroPaciente.css"
+import "./DetalhesPaciente.css"
 
 function DetalhesPaciente() {
   const { id } = useParams()
@@ -13,7 +13,7 @@ function DetalhesPaciente() {
       : "https://cesar-gerenciador-pd.onrender.com"
 
   useEffect(() => {
-    fetch(`${API_BASE}/usuarios/${id}`)
+    fetch(`https://cesar-gerenciador-pd.onrender.com/usuarios/${id}`)
       .then((res) => res.json())
       .then((data) => setPaciente(data))
       .catch((err) => console.error("Erro ao buscar paciente:", err))
@@ -25,10 +25,10 @@ function DetalhesPaciente() {
   return (
     <div className="dashboard-wrapper">
       <SideBar />
-      <div className="form formulario">
+      <div className="container-forms-detalhe" id="containerDetalhesPaciente">
         <fieldset className="border p-4 rounded shadow-sm bg-white">
           <h3 className="text-center mb-4 titulo-principal">
-            Detalhes do Paciente  
+            Detalhes do Paciente
           </h3>
 
           <div className="row mb-3">
@@ -95,7 +95,11 @@ function DetalhesPaciente() {
           )}
 
           <div className="text-center mt-4">
-            <a href="/atendimentos" className="btn btn-secondary">
+            <a
+              href="/atendimentos"
+              className="btn btn-secondary"
+              id="botaoVoltarDetalhes"
+            >
               Voltar para atendimentos
             </a>
           </div>
