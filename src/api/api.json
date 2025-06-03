@@ -68,25 +68,8 @@
       "turno": [
         "noite"
       ]
-    },
-    {
-      "id": "4b10",
-      "nome": "Maria da sdfsd",
-      "matricula": "12165351465",
-      "cpf": "108.104.555-55",
-      "data_nascimento": "2012-12-12",
-      "NomeResponsavel": "Andre Silva",
-      "telefone": "(81) 998242650",
-      "contatoEmergencia": "(81) 999411692",
-      "email": "felipe.pires@gmail.com",
-      "TipoDeVinculo": "Aluno",
-      "mensagem": "",
-      "possui": "Sim",
-      "turno": [
-        "noite"
-      ],
-      "curso": "Análise e Desenvolvimento de Sistemas"
     }
+
   ],
   "descricaoAtendimentos": [
     {
