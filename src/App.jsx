@@ -12,7 +12,8 @@ import CadastroPaciente from "./pages/CadastroPaciente"
 import Anexos from "./pages/Anexos"
 import CalendarioAgenda from "./pages/CalendarioAgenda"
 import "./App.css"
-import DescricaoAtendimentos from "./pages/DescricaoAtendimentos";
+import DescricaoAtendimentos from "./pages/DescricaoAtendimentos"
+import DetalhesPaciente from "./pages/DetalhesPaciente"
 
 export default function App() {
   return (
@@ -25,11 +26,15 @@ export default function App() {
         <Route path="/perfil" element={<TelaPerfilUsuario />} />
         <Route path="/recuperacao" element={<Recuperacao />} />
         <Route path="/agendamento" element={<Agendamento />} />
-        <Route path="/descricaoAtendimentos" element={<DescricaoAtendimentos />} />
+        <Route
+          path="/descricaoAtendimentos"
+          element={<DescricaoAtendimentos />}
+        />
         {/* <Route path="/calendario" element={<Calendario />} /> */}
         <Route path="/cadastro" element={<CadastroPaciente />} />
         <Route path="/anexos" element={<Anexos />} />
         <Route path="/CalendarioAgenda" element={<CalendarioAgenda />} />
+        <Route path="/paciente/:id" element={<DetalhesPaciente />} />
       </Routes>
     </div>
   )
