@@ -17,6 +17,9 @@ A aplicação foi construída utilizando as tecnologias HTML, CSS, React e Boots
 - JSON Server
 
 ## Como Executar o Projeto
+### Pelo link do VERCEL
+
+https://cesar-gerenciador-pd-ssyh.vercel.app/dashboard
 
 ### 1. Clone o repositório
 
