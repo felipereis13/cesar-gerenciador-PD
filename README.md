@@ -21,6 +21,8 @@ A aplicação foi construída utilizando as tecnologias HTML, CSS, React e Boots
 
 https://cesar-gerenciador-pd-ssyh.vercel.app/dashboard
 
+### Ou
+
 ### 1. Clone o repositório
 
 ```bash
